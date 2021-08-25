@@ -1,0 +1,38 @@
+
+
+.inactive {
+    color: black !important;
+    opacity: 0.6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.inactive:hover {
+    outline: none;
+    text-shadow: 1px 1px #ee7008;
+    text-decoration: none;
+   
+}
+
+.selected {
+    text-decoration: underline ;
+    font-weight: bold;
+    color: orangered !important;
+  }
+
+
+.login{
+    border-radius: 10%;
+    background-color: orangered;
+    color: black;
+    opacity: 0.9; 
+    
+}
+
+.login:hover { 
+    outline: none;
+    border-color: #ee7008;
+    box-shadow: 0 0 20px #ee7008;
+    text-decoration: none;
+    color: black;
+}
