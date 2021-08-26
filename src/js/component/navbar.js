@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -6,21 +6,38 @@ import "../../styles/navbar.scss";
 
 export const Navigationbar = props => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [show, setShow] = useState(false);
+
+	//animacion para controlar el navbar hide
+	const showNav = () => {
+		if (window.scrollY < 100) {
+			setShow(false);
+		} else {
+			setShow(true);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener("scroll", showNav);
+		return () => {
+			window.removeEventListener("scroll", showNav);
+		};
+	}, []);
 
 	const toggle = () => setIsOpen(!isOpen);
 
-	//assigning location variable
+	//asignar una variable al location
 	const location = useLocation();
 
-	//destructuring pathname from location
+	//destructurar el pathname
 	const { pathname } = location;
 
-	//Javascript split method to get the name of the path in array
+	//obtener el path para activar el link del navbar en el que esta el usuario
 	const splitLocation = pathname.split("/");
 
 	return (
 		<div>
-			<Navbar color="faded" light expand="md" className="navbar m-1">
+			<Navbar color="faded" light expand="md" className={`navbar ${show && "navbar-hide"}`}>
 				<NavbarBrand>
 					<Link to="/">Logo</Link>
 				</NavbarBrand>
