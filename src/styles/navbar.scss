@@ -1,4 +1,15 @@
+.navbar{
+    position: fixed;
+    // top:0;
+    right: 0;
+    left: 0;
+    transition: top 0.3s;
+    
+}
 
+.navbar-hide{
+    top: -50px;
+}
 
 .inactive {
     color: black !important;
@@ -9,21 +20,16 @@
 
 .inactive:hover {
     outline: none;
-    text-shadow: 1px 1px #ee7008;
+    text-shadow: 1px 1px rgb(245, 111, 245);
     text-decoration: none;
    
 }
 
-.selected {
-    text-decoration: underline ;
-    font-weight: bold;
-    color: orangered !important;
-  }
 
 
 .login{
     border-radius: 10%;
-    background-color: orangered;
+    background-color: salmon;
     color: black;
     opacity: 0.9; 
     
@@ -31,8 +37,8 @@
 
 .login:hover { 
     outline: none;
-    border-color: #ee7008;
-    box-shadow: 0 0 20px #ee7008;
+    border-color: rgb(245, 111, 245);
+    box-shadow: 0 0 20px rgb(245, 111, 245);
     text-decoration: none;
     color: black;
 }
