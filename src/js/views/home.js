@@ -6,7 +6,7 @@ import { Item } from "../component/item";
 
 export const Home = props => {
 	const [breed, setBreed] = useState("");
-	const [url, setUrl] = useState("");
+	const [url, setUrl] = useState([]);
 
 	const submit = e => {
 		e.preventDefault();
@@ -14,9 +14,9 @@ export const Home = props => {
 	};
 
 	async function getList() {
-		let response = await fetch(`https://dog.ceo/api/breed/${breed}/images/random`);
-		// console.log(response);
+		let response = await fetch(`https://dog.ceo/api/breed/${breed}/images/random/3`);
 		let data = await response.json();
+		console.log(data);
 		setUrl(data.message);
 	}
 
@@ -87,9 +87,9 @@ export const Home = props => {
 					</button>
 				</form>
 				<div>
-					<img className="m-2 rounded breed-img" src={url} />
-					<img className="m-2 rounded breed-img" src={url} />
-					<img className="m-2 rounded breed-img" src={url} />
+					<img className="m-2 rounded breed-img" src={url[1]} />
+					<img className="m-2 rounded breed-img" src={url[2]} />
+					<img className="m-2 rounded breed-img" src={url[0]} />
 				</div>
 			</div>
 			<Carousel className="my-5" responsive={responsive} infinite={true}>

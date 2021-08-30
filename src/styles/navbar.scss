@@ -12,7 +12,14 @@
 }
 
 .inactive {
-    color: black !important;
+    color: orange !important;
+    opacity: 0.6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.selected {
+    color: red !important;
     opacity: 0.6;
     text-decoration: none;
     font-weight: bold;
