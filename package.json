@@ -80,6 +80,7 @@
 		"bootstrap": "^4.3.1",
 		"prop-types": "^15.6.1",
 		"react": "^16.8.4",
+		"react-cart-components": "^2.1.0",
 		"react-dom": "^16.8.4",
 		"react-multi-carousel": "^2.6.5",
 		"react-polyfills": "0.0.1",
