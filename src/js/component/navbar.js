@@ -59,7 +59,7 @@ export const Navigationbar = props => {
 								exact
 								to="/info"
 								className={splitLocation[1] === "info" ? "mx-5 selected" : "mx-5 inactive"}>
-								Quienes somos?
+								Como funciona?
 							</NavLink>
 						</NavItem>
 						<NavItem>

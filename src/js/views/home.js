@@ -65,15 +65,15 @@ export const Home = props => {
 				<h3>Lorem ipsum</h3>
 				<div className="border border-primary d-flex justify-content-center m-5 flex-column flex-md-row flex-lg-row">
 					<div className="mx-5 text-stats">
-						<p>Customers</p>
+						<p>Adoptados</p>
 						<p>99k</p>
 					</div>
 					<div className="mx-5 text-stats">
-						<p>Customers</p>
+						<p>Clientes</p>
 						<p>99k</p>
 					</div>
 					<div className="mx-5 text-stats">
-						<p>Customers</p>
+						<p>Felices</p>
 						<p>99k</p>
 					</div>
 				</div>

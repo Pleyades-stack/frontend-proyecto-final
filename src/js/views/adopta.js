@@ -21,7 +21,7 @@ export const Adopta = () => {
 					/>
 				</div>
 			</div>
-			<div className="d-flex flex-sm-column flex-md-row flex-lg-row justify-content-center">
+			<div className="d-flex flex-sm-column flex-md-row flex-lg-row justify-content-sm-center align-items-sm-center">
 				<Item />
 				<Item />
 				<Item />
