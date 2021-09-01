@@ -7,7 +7,7 @@ import { Adopta } from "./views/adopta";
 import { Info } from "./views/info";
 import { Donacion } from "./views/donacion";
 import { Perfil } from "./views/perfil";
-import { Login } from "./views/login";
+import { Login } from "./views/login.jsx";
 import injectContext from "./store/appContext";
 
 import { Navigationbar } from "./component/navbar";

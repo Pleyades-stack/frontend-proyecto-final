@@ -1,9 +1,20 @@
 /* 
     General Styles
 */
-.loginForm{
-    background-color: #0c0807;
-    .imagen{
-        color: white;
-    }
+.loginContainer{
+    height: 100vh;
+    margin-bottom: 150px !important;
+    .loginCard{
+        max-width: 100% !important;
+        flex-direction: row;
+        min-height: 80% !important;
+        .imagen{
+            background-color: #0c0807;
+            color: white;
+            min-height: 100%;
+        }
+        .formulario{
+            min-height: 100%;
+        }
+}
 }
