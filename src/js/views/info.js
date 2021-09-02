@@ -7,7 +7,7 @@ export const Info = () => (
 			<h2 className="mt-5 font-weight-bold ">Como funciona?</h2>
 			<hr className="container rounded" />
 			<h4 className="container font-weight-bold">1. Crea un perfil de tu mascota</h4>
-			<div className="container d-flex">
+			<div className="container d-flex flex-column flex-lg-row align-items-sm-center">
 				<div>
 					<p className="texto-todos">
 						Create a pet profile in minutes and manage it in your dashboard. Use your dashboard to:
@@ -23,19 +23,22 @@ export const Info = () => (
 
 				<img
 					className="ml-3 imagen-todas rounded "
-					src="https://rehome.adoptapet.com/img/v2/how-it-works/Step-1.svg"
+					src="https://user-images.githubusercontent.com/84352630/131913669-593054d7-678f-4519-a07b-ed12e90a7702.png"
 				/>
 			</div>
 			<hr className="container rounded" />
 		</div>
 		<div className="text-center mt-5">
 			<h4 className="container font-weight-bold">2. Revisa las aplicaciones</h4>
-			<div className="container d-flex">
-				<img
-					className="ml-3 imagen-todas rounded "
-					src="https://rehome.adoptapet.com/img/v2/how-it-works/Step-2.svg"
-				/>
+			<div className="container d-flex flex-column flex-lg-row  ">
 				<div>
+					<img
+						className="ml-3 mr-2 imagen-todas rounded "
+						src="https://user-images.githubusercontent.com/84352630/131914963-c283629c-62cc-467e-b686-44e6202886af.png"
+					/>
+				</div>
+
+				<div className="ml-2">
 					<p className="texto-todos">
 						Encontrar un nuevo hogar para su mascota puede parecer una gran decisión. Nos aseguraremos de
 						que no estés solo
@@ -55,7 +58,7 @@ export const Info = () => (
 		</div>
 		<div className="text-center mt-5">
 			<h4 className="container font-weight-bold">3. Conoce a los adoptantes</h4>
-			<div className="container d-flex">
+			<div className="container d-flex flex-column flex-lg-row align-items-sm-center">
 				<div>
 					<p className="texto-todos">
 						Después de seleccionar la aplicación, es hora de conocer al adoptante. Le daremos todos los
@@ -64,20 +67,20 @@ export const Info = () => (
 				</div>
 				<img
 					className="ml-3 imagen-todas rounded "
-					src="https://rehome.adoptapet.com/img/v2/how-it-works/Step-3.svg"
+					src="https://user-images.githubusercontent.com/84352630/131915127-b40b1455-709a-4dce-af68-69010e7f547b.png"
 				/>
 			</div>
 			<hr className="container rounded" />
 		</div>
 		<div className="text-center mt-5">
 			<h4 className="container font-weight-bold">4. Finaliza la adopcion</h4>
-			<div className="container d-flex">
+			<div className="container d-flex flex-column flex-lg-row align-items-sm-center">
 				<img
 					className="ml-3 imagen-todas rounded "
-					src="https://rehome.adoptapet.com/img/v2/how-it-works/Step-4.svg"
+					src="https://user-images.githubusercontent.com/84352630/131915226-bfae2ac7-8726-4369-9c55-07a7b47a112f.png"
 				/>
-				<div>
-					<p className="texto-todos">
+				<div className="ml-3">
+					<p className="mt-2 texto-todos">
 						Adopt-a-Pet.com le brinda un acuerdo de adopción personalizado que usted y su adoptante pueden
 						firmar en línea.
 					</p>

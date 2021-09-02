@@ -1,6 +1,7 @@
-// *{
-//     background-color: bisque;
-// }
+:root{
+    --color-marron: rgb(87,53,22);
+    --color-azul: rgb(54,160,164);
+}
 
 .dog-yellow{
     width: 300px;
@@ -30,4 +31,10 @@
 .breed-img{
     width: 250px;
     height: 250px;
+}
+
+.botones-home{
+    color: black;
+    background-color: var(--color-azul);
+    // font-weight: 900;
 }

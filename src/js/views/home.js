@@ -3,6 +3,8 @@ import "../../styles/home.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Item } from "../component/item";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 export const Home = props => {
 	const [breed, setBreed] = useState("");
@@ -53,8 +55,8 @@ export const Home = props => {
 						urna ante. Praesent ultrices quis dui ut luctus. Vivamus eget condimentum erat.
 					</p>
 					<div className="d-flex justify-content-center mt-5">
-						<button className="m-2 btn btn-info">Adoptar</button>
-						<button className="m-2 btn btn-info">Dar en adopcion</button>
+						<button className="botones-home m-2 btn btn-info">Adoptar</button>
+						<button className="botones-home m-2 btn btn-info">Dar en adopcion</button>
 					</div>
 				</div>
 				<div>
@@ -63,7 +65,7 @@ export const Home = props => {
 			</div>
 			<div className="mt-4">
 				<h3>Lorem ipsum</h3>
-				<div className="border border-primary d-flex justify-content-center m-5 flex-column flex-md-row flex-lg-row">
+				<div className="border border-info rounded d-flex justify-content-center m-5 flex-column flex-md-row flex-lg-row">
 					<div className="mx-5 text-stats">
 						<p>Adoptados</p>
 						<p>99k</p>
@@ -79,10 +81,10 @@ export const Home = props => {
 				</div>
 			</div>
 			<div>
-				<p>Encuentra fotos de tu raza favorita, Ingresa el nombre:</p>
+				<h3>Encuentra fotos de tu raza favorita, Ingresa el nombre:</h3>
 				<form className="mb-3" onSubmit={submit}>
 					<input name="dog breed" value={breed} onChange={e => setBreed(e.target.value)} />
-					<button className="m-2 btn btn-info" type="submit">
+					<button className="botones-home m-2 btn btn-info" type="submit">
 						Buscar
 					</button>
 				</form>
@@ -94,38 +96,68 @@ export const Home = props => {
 			</div>
 			<Carousel className="my-5" responsive={responsive} infinite={true}>
 				<div className="card text-left mt-5 m-2">
-					<img className="card-img" src="https://via.placeholder.com/150" />
+					<img
+						className="card-img"
+						src="https://user-images.githubusercontent.com/84352630/131915595-f803f94a-1481-476e-8e03-1f5230b4c2e7.png"
+					/>
 					<div className="card-body">
-						<h5 className="card-title">Lorem ipsu </h5>
-						<p className="card-text">Test text</p>
+						<button className="btn btn-success">Adoptado</button>
+						<div className="d-flex mt-3 ">
+							<FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
+							<h5 className="ml-2 card-title">Caracas, Venezuela </h5>
+						</div>
 					</div>
 				</div>
 				<div className="card text-left mt-5 m-2">
-					<img className="img-fluid" src="https://via.placeholder.com/150" />
+					<img
+						className="img-fluid"
+						src="https://user-images.githubusercontent.com/84352630/131915900-9f3b5e05-4077-431b-9e81-fb6cc3fdfc23.png"
+					/>
 					<div className="card-body">
-						<h5 className="card-title">Lorem ipsu </h5>
-						<p className="card-text">Test text</p>
+						<button className="btn btn-success">Adoptado</button>
+						<div className="d-flex mt-3 ">
+							<FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
+							<h5 className="ml-2 card-title">Caracas, Venezuela </h5>
+						</div>
 					</div>
 				</div>
 				<div className="card text-left mt-5 m-2">
-					<img className="img-fluid" src="https://via.placeholder.com/150" />
+					<img
+						className="img-fluid"
+						src="https://user-images.githubusercontent.com/84352630/131915993-1fb80dfc-a8fa-451d-82e0-3f4bf7a5c90a.png"
+					/>
 					<div className="card-body">
-						<h5 className="card-title">Lorem ipsu </h5>
-						<p className="card-text">Test text</p>
+						<button className="btn btn-success">Adoptado</button>
+						<div className="d-flex mt-3 ">
+							<FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
+							<h5 className="ml-2 card-title">Caracas, Venezuela </h5>
+						</div>
 					</div>
 				</div>
 				<div className="card text-left mt-5 m-2">
-					<img className="img-fluid" src="https://via.placeholder.com/150" />
+					<img
+						className="img-fluid"
+						src="https://user-images.githubusercontent.com/84352630/131916075-54b25e89-1862-4ed9-93bf-051967463ce4.png"
+					/>
 					<div className="card-body">
-						<h5 className="card-title">Lorem ipsu </h5>
-						<p className="card-text">Test text</p>
+						<button className="btn btn-success">Adoptado</button>
+						<div className="d-flex mt-3 ">
+							<FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
+							<h5 className="ml-2 card-title">Caracas, Venezuela </h5>
+						</div>
 					</div>
 				</div>
 				<div className="card text-left mt-5 m-2">
-					<img className="img-fluid" src="https://via.placeholder.com/150" />
+					<img
+						className="img-fluid"
+						src="https://user-images.githubusercontent.com/84352630/131916147-660ae591-a1d0-4c82-b6b6-a48eb1525199.png"
+					/>
 					<div className="card-body">
-						<h5 className="card-title">Lorem ipsu </h5>
-						<p className="card-text">Test text</p>
+						<button className="btn btn-success">Adoptado</button>
+						<div className="d-flex mt-3 ">
+							<FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
+							<h5 className="ml-2 card-title">Caracas, Venezuela </h5>
+						</div>
 					</div>
 				</div>
 			</Carousel>

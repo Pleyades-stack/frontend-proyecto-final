@@ -1,3 +1,8 @@
+:root{
+    --color-marron: rgb(87,53,22);
+    --color-azul: rgb(54,160,164);
+}
+
 .navbar{
     position: fixed;
     // top:0;
@@ -12,14 +17,14 @@
 }
 
 .inactive {
-    color: orange !important;
-    opacity: 0.6;
+    color: var(--color-marron) !important;
+    // opacity: 0.6;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .selected {
-    color: red !important;
+    color: var(--color-azul) !important;
     opacity: 0.6;
     text-decoration: none;
     font-weight: bold;
@@ -27,7 +32,7 @@
 
 .inactive:hover {
     outline: none;
-    text-shadow: 1px 1px rgb(245, 111, 245);
+    text-shadow: 1px 1px var(--color-azul);
     text-decoration: none;
    
 }
@@ -36,16 +41,21 @@
 
 .login{
     border-radius: 10%;
-    background-color: salmon;
-    color: black;
-    opacity: 0.9; 
+    background-color: var(--color-azul);
+    color: var(--color-marron);
+    font-weight: bolder;
+    // opacity: 0.9; 
     
 }
 
 .login:hover { 
     outline: none;
-    border-color: rgb(245, 111, 245);
-    box-shadow: 0 0 20px rgb(245, 111, 245);
+    border-color: var(--color-marron);
+    box-shadow: 0 0 20px var(--color-marron);
     text-decoration: none;
     color: black;
+}
+
+.logo{
+    width:150px
 }

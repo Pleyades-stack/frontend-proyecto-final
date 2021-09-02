@@ -39,7 +39,12 @@ export const Navigationbar = props => {
 		<div>
 			<Navbar color="faded" light expand="md" className={`navbar ${show && "navbar-hide"}`}>
 				<NavbarBrand>
-					<Link to="/">Logo</Link>
+					<Link to="/">
+						<img
+							className="logo"
+							src="https://user-images.githubusercontent.com/84352630/131912033-4bb862c2-328f-43b5-a740-9a6255f567e1.png"
+						/>
+					</Link>
 				</NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
