@@ -10,6 +10,12 @@
 .info-home{
     text-align: justify;
     text-justify: inter-word;
+    font-size: larger;
+    
+}
+
+.titulo-home{
+    font-weight: bolder;
 }
 
 .text-stats{
@@ -37,4 +43,8 @@
     color: black;
     background-color: var(--color-azul);
     // font-weight: 900;
+}
+
+.logo-home{
+    width: 500px;
 }

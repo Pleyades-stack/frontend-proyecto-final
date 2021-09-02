@@ -7,8 +7,8 @@ export const Login = () => {
 	const { store, actions } = useContext(Context);
 	const [registro, setRegistro] = useState(false);
 	const [current, setCurrent] = useState(1);
-	let active = "btn btn-outline-primary active";
-	let normal = "btn btn-outline-primary";
+	let active = "btn btn-outline-info active";
+	let normal = "btn btn-outline-info";
 	const [correo, setCorreo] = useState("");
 	const [clave, setclave] = useState("");
 	const [nombre, setNombre] = useState("");
@@ -52,7 +52,10 @@ export const Login = () => {
 				<div className="text-center d-flex flex-column imagen col-lg-6 col-md-12 justify-content-center">
 					<p>Conviertete en un guardian permanente o consigue un hogar para un perro</p>
 					<div className="align-self-center w-75">
-						<img className="w-50" src={Dog} />
+						<img
+							className="w-50"
+							src="https://user-images.githubusercontent.com/84352630/131925008-ca7354fa-2767-4651-a6c6-5e1b007b5037.png"
+						/>
 					</div>
 				</div>
 				<div className="d-flex flex-column col-lg-6 col-md-12 formulario">
@@ -124,7 +127,7 @@ export const Login = () => {
 											</div>
 											<div className="form-group">
 												<button
-													className="btn btn-primary"
+													className="btn btn-info"
 													onClick={() => setCurrent(current + 1)}>
 													Siguiente
 												</button>
@@ -188,10 +191,10 @@ export const Login = () => {
 												</label>
 											</div>
 											<div className="form-group d-flex">
-												<button className="btn btn-primary mr-2" onClick={() => setCurrent(1)}>
+												<button className="btn btn-info mr-2" onClick={() => setCurrent(1)}>
 													Regresar
 												</button>
-												<button className="btn btn-primary" onClick={() => handleRegister()}>
+												<button className="btn btn-info" onClick={() => handleRegister()}>
 													Registrate
 												</button>
 											</div>
@@ -219,7 +222,7 @@ export const Login = () => {
 										/>
 									</div>
 									<div className="form-group">
-										<button className="btn btn-primary" onClick={() => handleLogin()}>
+										<button className="btn btn-info" onClick={() => handleLogin()}>
 											Ingresa
 										</button>
 									</div>

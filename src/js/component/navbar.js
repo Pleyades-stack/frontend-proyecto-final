@@ -42,7 +42,7 @@ export const Navigationbar = props => {
 					<Link to="/">
 						<img
 							className="logo"
-							src="https://user-images.githubusercontent.com/84352630/131912033-4bb862c2-328f-43b5-a740-9a6255f567e1.png"
+							src="https://user-images.githubusercontent.com/84352630/131923785-086ce211-ce04-473f-b9fb-40b8c65f1ff1.png"
 						/>
 					</Link>
 				</NavbarBrand>
@@ -64,7 +64,7 @@ export const Navigationbar = props => {
 								exact
 								to="/info"
 								className={splitLocation[1] === "info" ? "mx-5 selected" : "mx-5 inactive"}>
-								Como funciona?
+								¿Como funciona?
 							</NavLink>
 						</NavItem>
 						<NavItem>

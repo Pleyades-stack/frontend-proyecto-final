@@ -4,20 +4,20 @@ import "../../styles/info.scss";
 export const Info = () => (
 	<div>
 		<div className="text-center mt-5">
-			<h2 className="mt-5 font-weight-bold ">Como funciona?</h2>
+			<h2 className="mt-5 font-weight-bold ">¿Como funciona?</h2>
 			<hr className="container rounded" />
 			<h4 className="container font-weight-bold">1. Crea un perfil de tu mascota</h4>
 			<div className="container d-flex flex-column flex-lg-row align-items-sm-center">
 				<div>
 					<p className="texto-todos">
-						Create a pet profile in minutes and manage it in your dashboard. Use your dashboard to:
+						Cree un perfil de mascota en minutos y adminístrelo en su panel de control. Use su tablero para:
 					</p>
 					<ul className="text-left">
-						<li>Edit and add to your pet profile</li>
-						<li>Review adopter applications</li>
-						<li>Respond to adopter questions</li>
-						<li>Upload pet records</li>
-						<li>Submit adoption paperwork</li>
+						<li>Edite y agregue a su perfil de mascota</li>
+						<li>Revisar las solicitudes de adopción</li>
+						<li>Responder a las preguntas de los adoptantes</li>
+						<li>Cargar registros de mascotas</li>
+						<li>Presentar la documentación de adopción</li>
 					</ul>
 				</div>
 
@@ -81,8 +81,8 @@ export const Info = () => (
 				/>
 				<div className="ml-3">
 					<p className="mt-2 texto-todos">
-						Adopt-a-Pet.com le brinda un acuerdo de adopción personalizado que usted y su adoptante pueden
-						firmar en línea.
+						aDOGta.com le brinda un acuerdo de adopción personalizado que usted y su adoptante pueden firmar
+						en línea.
 					</p>
 				</div>
 			</div>
