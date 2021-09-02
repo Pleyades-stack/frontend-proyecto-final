@@ -1,7 +1,10 @@
 import React from "react";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
-export const Perfil = () => (
-	<div className="text-center mt-5">
-		<h1>MI perfil</h1>
-	</div>
-);
+export const Perfil = () => {
+	return (
+		<div className="text-center mt-5">
+			<h1>Mi perfil</h1>
+		</div>
+	);
+};
