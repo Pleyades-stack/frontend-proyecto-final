@@ -6,7 +6,7 @@ import { Home } from "./views/home";
 import { Adopta } from "./views/adopta";
 import { Info } from "./views/info";
 import { Donacion } from "./views/donacion";
-import { Perfil } from "./views/perfil";
+import { Perfil } from "./views/perfil.jsx";
 import { Login } from "./views/login.jsx";
 import { PerroDetails } from "./views/PerroDetails.jsx";
 import injectContext from "./store/appContext";
