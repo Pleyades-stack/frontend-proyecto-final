@@ -3,7 +3,7 @@ import "../../styles/info.scss";
 
 export const Info = () => (
 	<div>
-		<div className="text-center mt-5">
+		<div className="texto-info text-center">
 			<h2 className="mt-5 font-weight-bold ">¿Como funciona?</h2>
 			<hr className="container rounded" />
 			<h4 className="container font-weight-bold">1. Crea un perfil de tu mascota</h4>
