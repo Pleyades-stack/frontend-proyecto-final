@@ -44,47 +44,60 @@ export const Home = props => {
 
 	return (
 		<div className=" mt-5 cont-all text-center">
-			<div className="p-3 m-3 rounded d-flex container-home flex-column flex-md-row flex-lg-row">
+			<div className="p-3 m-3 rounded d-flex container-home flex-column ">
+				<div className="mt-4">
+					<img
+						className="logo-home"
+						src="https://user-images.githubusercontent.com/84352630/131912033-4bb862c2-328f-43b5-a740-9a6255f567e1.png"
+					/>
+				</div>
 				<div className="mt-3">
-					<h2 className="mb-3">Lorem ipsum</h2>
-					<h4 className="mt-3 header-home text-left">Lorem ipsum:</h4>
+					<h2 className="mb-3 titulo-home">¿Quienes somos?</h2>
 					<p className="mt-3 info-home">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim urna. Curabitur nec
-						egestas neque. Etiam efficitur turpis faucibus velit condimentum, eu ultrices massa
-						commodo.Pellentesque et malesuada purus. Phasellus blandit in nulla eget consequat. Nullam ac
-						urna ante. Praesent ultrices quis dui ut luctus. Vivamus eget condimentum erat.
+						aDogta es una comunidad pensada y diseñada para facilitar el proceso de adopción de perros
+						rescatados, en ella podrás contactar con Guardianes temporales (refugio o personas) que se dan a
+						la tarea buscar hogares definitivos, consigue un compañero que forme parte de tu familia y
+						conviértete en un Guardián!
 					</p>
 					<div className="d-flex justify-content-center mt-5">
-						<button className="botones-home m-2 btn btn-info">Adoptar</button>
-						<button className="botones-home m-2 btn btn-info">Dar en adopcion</button>
+						<button
+							className="botones-home m-2 btn btn-info"
+							style={{ fontWeight: "bold", color: "white" }}>
+							Adoptar
+						</button>
+						<button
+							className="botones-home m-2 btn btn-info"
+							style={{ fontWeight: "bold", color: "white" }}>
+							Dar en adopcion
+						</button>
 					</div>
-				</div>
-				<div>
-					<img className="ml-3 dog-yellow rounded " src="https://via.placeholder.com/150" />
 				</div>
 			</div>
 			<div className="mt-4">
-				<h3>Lorem ipsum</h3>
+				<h3 style={{ fontWeight: "bold", color: "rgb(87,53,22)" }}>Nuestro trabajo en numeros</h3>
 				<div className="border border-info rounded d-flex justify-content-center m-5 flex-column flex-md-row flex-lg-row">
 					<div className="mx-5 text-stats">
 						<p>Adoptados</p>
-						<p>99k</p>
+						<p>1245+</p>
 					</div>
 					<div className="mx-5 text-stats">
 						<p>Clientes</p>
-						<p>99k</p>
+						<p>550+</p>
 					</div>
 					<div className="mx-5 text-stats">
 						<p>Felices</p>
-						<p>99k</p>
+						<p>9999+</p>
 					</div>
 				</div>
 			</div>
 			<div>
-				<h3>Encuentra fotos de tu raza favorita, Ingresa el nombre:</h3>
+				<h3 style={{ fontWeight: "bold" }}>Encuentra fotos de tu raza favorita, Ingresa el nombre:</h3>
 				<form className="mb-3" onSubmit={submit}>
 					<input name="dog breed" value={breed} onChange={e => setBreed(e.target.value)} />
-					<button className="botones-home m-2 btn btn-info" type="submit">
+					<button
+						className="botones-home m-2 btn btn-info"
+						type="submit"
+						style={{ fontWeight: "bold", color: "white" }}>
 						Buscar
 					</button>
 				</form>

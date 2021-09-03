@@ -54,7 +54,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.then(res => {
 						console.log(res);
-						setStore({ perrosUsuario: [...res.data.perrosUsuario] });
+						setStore({ perrosUsuario: res.data.perrosUsuario });
 					});
 			}
 		}
