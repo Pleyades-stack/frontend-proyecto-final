@@ -4,7 +4,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			token: "",
 			usuario: "",
-			link: "http://10.0.2.15:5000"
+			link: "http://10.0.2.15:5000",
+			perros: [],
+			perroActual: {},
+			imagenes: []
 		},
 		actions: {
 			register: async usuario => {
@@ -26,6 +29,23 @@ const getState = ({ getStore, getActions, setStore }) => {
 							setStore({ token: res.data.token });
 						}
 					});
+			},
+			getPerros: async () => {
+				await axios.get(`${getStore().link}/perros`).then(res => setStore({ perros: res.data.perros }));
+			},
+
+			getPerro: async id => {
+				setStore({ perroActual: {} });
+
+				await axios.get(`${getStore().link}/perro/${id}`).then(res => {
+					setStore({ perroActual: res.data });
+				});
+			},
+			getImagenes: async id => {
+				setStore({ imagenes: [] });
+				await axios
+					.get(`${getStore().link}/perro/imagen/${id}`)
+					.then(res => setStore({ imagenes: res.data.imagenes }));
 			}
 		}
 	};

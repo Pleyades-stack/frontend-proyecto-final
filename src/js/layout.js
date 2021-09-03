@@ -8,6 +8,7 @@ import { Info } from "./views/info";
 import { Donacion } from "./views/donacion";
 import { Perfil } from "./views/perfil";
 import { Login } from "./views/login.jsx";
+import { PerroDetails } from "./views/PerroDetails.jsx";
 import injectContext from "./store/appContext";
 
 import { Navigationbar } from "./component/navbar";
@@ -39,6 +40,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/perfil">
 							<Perfil />
+						</Route>
+						<Route exact path="/perro/:id">
+							<PerroDetails />
 						</Route>
 						<Route exact path="/login">
 							<Login />
