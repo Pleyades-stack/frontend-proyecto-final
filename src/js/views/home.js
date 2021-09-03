@@ -81,11 +81,11 @@ export const Home = props => {
 						<p>1245+</p>
 					</div>
 					<div className="mx-5 text-stats">
-						<p>Clientes</p>
+						<p>Usuarios</p>
 						<p>550+</p>
 					</div>
 					<div className="mx-5 text-stats">
-						<p>Felices</p>
+						<p>Buscando Hogar</p>
 						<p>9999+</p>
 					</div>
 				</div>
