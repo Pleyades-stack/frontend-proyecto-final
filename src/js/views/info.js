@@ -6,18 +6,16 @@ export const Info = () => (
 		<div className="texto-info text-center">
 			<h2 className="mt-5 font-weight-bold ">¿Como funciona?</h2>
 			<hr className="container rounded" />
-			<h4 className="container font-weight-bold">1. Crea un perfil de tu mascota</h4>
+			<h4 className="container font-weight-bold">1. Crea un perfil de tu mascota:</h4>
 			<div className="container d-flex flex-column flex-lg-row align-items-sm-center">
 				<div>
 					<p className="texto-todos">
-						Cree un perfil de mascota en minutos y adminístrelo en su panel de control. Use su tablero para:
+						Si ya estas registrado crea del de cada perro llenando el formulario que encontraras en tu
+						perfil. En tu perfil de usuario podrás:
 					</p>
-					<ul className="text-left">
-						<li>Edite y agregue a su perfil de mascota</li>
-						<li>Revisar las solicitudes de adopción</li>
-						<li>Responder a las preguntas de los adoptantes</li>
-						<li>Cargar registros de mascotas</li>
-						<li>Presentar la documentación de adopción</li>
+					<ul className="texto-todos text-left">
+						<li>Agregar y editar el perfil de los perros </li>
+						<li>Dar de baja al perfil de los perros que ya fueron adoptados</li>
 					</ul>
 				</div>
 
@@ -29,7 +27,7 @@ export const Info = () => (
 			<hr className="container rounded" />
 		</div>
 		<div className="text-center mt-5">
-			<h4 className="container font-weight-bold">2. Revisa las aplicaciones</h4>
+			<h4 className="container font-weight-bold">2. Revisa los perfiles de las personas interesadas</h4>
 			<div className="container d-flex flex-column flex-lg-row  ">
 				<div>
 					<img
@@ -40,18 +38,10 @@ export const Info = () => (
 
 				<div className="ml-2">
 					<p className="texto-todos">
-						Encontrar un nuevo hogar para su mascota puede parecer una gran decisión. Nos aseguraremos de
-						que no estés solo
+						Encontrar un nuevo hogar para un perro es una gran decisión una gran decisión, por eso revisa
+						detenidamente el perfil de los solicitantes y realiza las preguntas correspondientes para
+						garantizar que es el adecuado para el perro.
 					</p>
-					<ul className="text-left">
-						<li>Te notificaremos cuando tengas una nueva aplicacion</li>
-						<li>
-							Si no está 100% seguro de su capacidad para elegir al adoptante adecuado, tenemos una guía
-							de selección pregunta por pregunta directamente en la página de la solicitud, para que pueda
-							ver qué respuestas son excelentes, cuáles no tan buenas y cuáles pueden requerir preguntas
-							de seguimiento
-						</li>
-					</ul>
 				</div>
 			</div>
 			<hr className="container rounded" />
@@ -81,8 +71,9 @@ export const Info = () => (
 				/>
 				<div className="ml-3">
 					<p className="mt-2 texto-todos">
-						aDOGta.com le brinda un acuerdo de adopción personalizado que usted y su adoptante pueden firmar
-						en línea.
+						aDOGta le brinda un acuerdo de adopción personalizado que usted y su adoptante pueden firmar en
+						línea antes de la entrega del perro , para finalizar el proceso dale de baja al perfil del
+						animal ingresando en tu perfil para publicarlo como Adoptado.
 					</p>
 				</div>
 			</div>
