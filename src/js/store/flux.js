@@ -3,11 +3,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			token: "",
-			usuario: "",
+			usuario: {},
 			link: "http://10.0.2.15:5000",
-			perros: [],
-			perroActual: {},
-			imagenes: []
+			perrosAdoptados: 0,
+			perrosUsuario: [],
+			perrosCuidado: 0
 		},
 		actions: {
 			register: async usuario => {
@@ -29,23 +29,33 @@ const getState = ({ getStore, getActions, setStore }) => {
 							setStore({ token: res.data.token });
 						}
 					});
+				await axios
+					.get(`${getStore().link}/usuario/profile`, {
+						headers: {
+							"token-acceso": getStore().token
+						}
+					})
+					.then(res => setStore({ usuario: res.data }));
 			},
-			getPerros: async () => {
-				await axios.get(`${getStore().link}/perros`).then(res => setStore({ perros: res.data.perros }));
-			},
-
-			getPerro: async id => {
-				setStore({ perroActual: {} });
-
-				await axios.get(`${getStore().link}/perro/${id}`).then(res => {
-					setStore({ perroActual: res.data });
+			crearPerro: async perro => {
+				await axios.post(`${getStore().link}/perro/crear`, perro).then(res => {
+					console.log(res);
 				});
 			},
 			getImagenes: async id => {
-				setStore({ imagenes: [] });
+				await axios.get(`${getStore().link}/perro/imagen/${id}`).then(res => console.log(res));
+			},
+			getPerros: async () => {
 				await axios
-					.get(`${getStore().link}/perro/imagen/${id}`)
-					.then(res => setStore({ imagenes: res.data.imagenes }));
+					.get(`${getStore().link}/usuario/perros`, {
+						headers: {
+							"token-acceso": getStore().token
+						}
+					})
+					.then(res => {
+						console.log(res);
+						setStore({ perrosUsuario: [...res.data.perrosUsuario] });
+					});
 			}
 		}
 	};
