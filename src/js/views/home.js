@@ -86,7 +86,7 @@ export const Home = props => {
 					</div>
 					<div className="mx-5 text-stats">
 						<p>Buscando Hogar</p>
-						<p>9999+</p>
+						<p>245+</p>
 					</div>
 				</div>
 			</div>
